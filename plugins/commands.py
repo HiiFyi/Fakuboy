@@ -187,9 +187,9 @@ async def start(client:Client, message):
                     #        InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                         ]] 
                         reply_markup = InlineKeyboardMarkup(buttons)
-                    #    m=await message.reply_sticker("") 
-                    #    await asyncio.sleep(1)
-                    #    await m.delete()
+                        m=await message.reply_sticker("CAACAgIAAxkBAAKwImg8XzB7UEouEre8Ps9F9HPcry7YAAL6EAACoccoSDllduuTWAejNgQ") 
+                        await asyncio.sleep(1)
+                        await m.delete()
                         await message.reply_photo(photo=random.choice(START_IMG), caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
                             reply_markup=reply_markup,
                             parse_mode=enums.ParseMode.HTML)
@@ -216,9 +216,9 @@ async def start(client:Client, message):
                     #        InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
-    #    m=await message.reply_sticker("") 
-     #   await asyncio.sleep(1)
-     #   await m.delete()
+        m=await message.reply_sticker("CAACAgIAAxkBAAKwImg8XzB7UEouEre8Ps9F9HPcry7YAAL6EAACoccoSDllduuTWAejNgQ") 
+        await asyncio.sleep(1)
+        await m.delete()
         await message.reply_photo(photo=random.choice(START_IMG), caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -394,7 +394,7 @@ async def start(client:Client, message):
         caption=f_caption,
         reply_markup=InlineKeyboardMarkup(btn)
     )
-    delCap = "<b>ʏᴏᴜʀ ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ {} ᴛᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛ ᴠɪᴏʟᴀᴛɪᴏɴs!</b>".format(f'{FILE_AUTO_DEL_TIMER / 60} ᴍɪɴᴜᴛᴇs' if FILE_AUTO_DEL_TIMER >= 60 else f'{FILE_AUTO_DEL_TIMER} sᴇᴄᴏɴᴅs')
+    delCap = "<b>⚠️ ʏᴏᴜʀ ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏ-ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ {} ⏳ ᴛᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱꜱᴜᴇꜱ ❌</b>".format(f'{FILE_AUTO_DEL_TIMER / 60} ᴍɪɴᴜᴛᴇs' if FILE_AUTO_DEL_TIMER >= 60 else f'{FILE_AUTO_DEL_TIMER} sᴇᴄᴏɴᴅs')
     afterDelCap = "<b>ʏᴏᴜʀ ғɪʟᴇ ɪs ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ {} ᴛᴏ ᴀᴠᴏɪᴅ ᴄᴏᴘʏʀɪɢʜᴛ ᴠɪᴏʟᴀᴛɪᴏɴs!</b>".format(f'{FILE_AUTO_DEL_TIMER / 60} ᴍɪɴᴜᴛᴇs' if FILE_AUTO_DEL_TIMER >= 60 else f'{FILE_AUTO_DEL_TIMER} sᴇᴄᴏɴᴅs') 
     replyed = await message.reply(
         delCap,
