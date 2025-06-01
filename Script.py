@@ -345,7 +345,7 @@ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀ�
 NOTE:
 - ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ ◉› :<blockquote><a href="https://t.me/ZaraflixBot">ℤ𝕒𝕣𝕒𝕗𝕝𝕚𝕩</a></blockquote>
 
-developer : Mr.Jisshu
+developer : ℤ𝕒𝕣𝕒𝕗𝕝𝕚𝕩
 </b>""" 
     GROUP_C_TEXT = """<b><blockquote>
  --------------Set Verify-------------
